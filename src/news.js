@@ -3,7 +3,7 @@ const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=81081f051cdc
 //Exportamos las noticias de manera asincrona
 
 export async function getNews() {
-    let result = await fetch(url).then(response => response).then(response => response.json())
+    let result = await fetch(url).then(response => response.json())
     console.log('====================================');
     console.log('nuevas noticias'+url);
     console.log('====================================');
